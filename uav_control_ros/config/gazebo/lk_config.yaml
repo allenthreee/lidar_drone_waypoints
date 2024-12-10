@@ -1,0 +1,38 @@
+t_miemie: 5
+dt: 0.01
+time_max: 30
+use_gazebo: true
+use_obs: true
+controller: 'LK_SMC'
+
+
+parameters:
+    uav_existance: [1, 0, 0, 0]
+    m: 1.5
+    pos0: [0., 0., 1.0]
+    offset: [0., 0., 0.]
+    dt: 0.01
+    group: '/uav0'
+    time_max: 30
+
+lk_smc_parameters:
+    eta: [0.6666667, 0.6666667, 0.6666667]
+    gamma2: [1., 1., 1.]
+    gamma3: [1., 1., 1.]
+    Ts: [10., 10., 10.]
+    Tu: [10., 10., 10.]
+    k2: [1., 1., 1.]
+    k3: [1., 1., 1.]
+    delta0: [0., 0., 0.]
+    w0: [0.001, 0.001, 0.001]
+    dim: 3
+    dt: 0.01
+
+obs:
+    eta: [0.6666667, 0.6666667, 0.6666667]
+    beta2: [2., 2., 2.]
+    beta3: [2., 2., 2.]
+    Td: [10., 10., 10.]
+    w0: [0.01, 0.01, 0.01]
+    dim: 3
+    dt: 0.01

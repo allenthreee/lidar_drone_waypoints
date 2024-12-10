@@ -1,0 +1,6 @@
+<launch>
+  <node>
+    <remap from="/vins_estimator/camera_pose_H" to="/uav0/mavros/vision_pose/pose" />
+    <remap from="/vins_estimator/camera_pose_H" to="/uav0/mavros/vision_speed/speed_vector" />
+  </node>
+</launch>
