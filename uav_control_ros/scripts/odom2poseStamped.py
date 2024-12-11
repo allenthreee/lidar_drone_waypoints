@@ -28,7 +28,7 @@ class OdometryToPoseStamped:
         
         # Publish the PoseStamped message
         self.pose_pub.publish(pose_stamped)
-        print("YWY, we have published posestamped")
+        print(f"\n\nYWY published posestamped at \n{pose_stamped.pose.position}")
 
     def run(self):
         # Keep the node running
